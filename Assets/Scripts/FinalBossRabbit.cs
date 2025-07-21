@@ -48,7 +48,7 @@ public class FinalBossRabbit : MonoBehaviour
             animator.SetTrigger("Attack");
 
         Vector2 knockbackDir = (player.transform.position - transform.position).normalized;
-        Vector2 knockback = -knockbackDir * knockbackForce; 
+        Vector2 knockback = -knockbackDir * knockbackForce;
 
         playerMovement.ApplyKnockbackWithRabbitEffect(knockback);
         playerMovement.TakeDamage(damageToPlayer, PlayerMovement.AttackerType.Rabbit);

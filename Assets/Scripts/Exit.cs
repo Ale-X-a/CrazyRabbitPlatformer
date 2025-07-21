@@ -2,16 +2,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Exit: MonoBehaviour
+public class Exit : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
-    
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         StartCoroutine(LoadNextLevel());
@@ -30,4 +30,4 @@ public class Exit: MonoBehaviour
 
         SceneManager.LoadScene(nextSceneIndex);
     }
-    }
+}

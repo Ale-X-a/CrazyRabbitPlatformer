@@ -49,6 +49,7 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         playerLives--;
+        Debug.Log("Player lost a life. Remaining lives: " + playerLives + ". Reloading scene.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         UpdateUI();
     }

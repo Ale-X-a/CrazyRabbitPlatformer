@@ -1,22 +1,22 @@
 using UnityEngine;
 
-public class BounceCharacters: MonoBehaviour
+public class BounceCharacters : MonoBehaviour
 {
     [SerializeField] private float interactionRange = 1.5f;
     [SerializeField] private float interactionCooldown = 1.5f;
     [SerializeField] private float knockbackForce = 5f;
-    
+
     private float lastInteractionTime;
     private GameObject player;
-    private PlayerMovement playerMovement; 
+    private PlayerMovement playerMovement;
     private Animator animator;
-    
+
     void Start()
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
-            playerMovement = player.GetComponent<PlayerMovement>(); 
+            playerMovement = player.GetComponent<PlayerMovement>();
     }
 
     void Update()

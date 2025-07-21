@@ -25,7 +25,7 @@ public class Skeleton : MonoBehaviour
     {
         transform.localScale = new Vector2(-(Mathf.Sign(rb2d.linearVelocity.x)), transform.localScale.y);
     }
-    
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

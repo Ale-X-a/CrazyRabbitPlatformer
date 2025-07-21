@@ -13,7 +13,7 @@ public class LevelCompleteUI : MonoBehaviour
     {
         if (levelCompleteCanvas != null)
             levelCompleteCanvas.SetActive(false);
-        
+
         if (endCanvas != null)
             endCanvas.SetActive(false);
     }

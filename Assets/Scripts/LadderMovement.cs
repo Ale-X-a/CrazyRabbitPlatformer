@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LadderMovement: MonoBehaviour
+public class LadderMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     [SerializeField] private Rigidbody2D rb2d;
@@ -24,7 +24,7 @@ public class LadderMovement: MonoBehaviour
             isLadder = false;
             isClimbing = false;
             rb2d.gravityScale = 3f;
-            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, 0f); 
+            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, 0f);
         }
     }
 

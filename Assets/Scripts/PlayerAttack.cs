@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerAttack: MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] GameObject swordObject;
     public Animator animator;
@@ -10,7 +10,7 @@ public class PlayerAttack: MonoBehaviour
     public LayerMask enemyLayers;
 
     private bool hasSword = false;
-    
+
     void Start()
     {
         if (swordObject != null)
@@ -44,5 +44,5 @@ public class PlayerAttack: MonoBehaviour
             enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
-    
+
 }

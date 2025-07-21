@@ -10533,7 +10533,7 @@ GameObject:
   - component: {fileID: 1976691719}
   - component: {fileID: 1976691722}
   - component: {fileID: 1976691721}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
