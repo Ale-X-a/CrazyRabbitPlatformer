@@ -36,6 +36,7 @@ public class LevelCompleteUI : MonoBehaviour
 
         if (currentSceneIndex + 1 < totalScenes)
         {
+            Debug.Log("Loading next scene: " + (currentSceneIndex + 1));
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
         else

@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2170924348955376929}
   - component: {fileID: 1088574525017635726}
-  - component: {fileID: 5254949787628415732}
   - component: {fileID: 4067426426179272963}
   - component: {fileID: 8114128686512530785}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Ladder 2
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -90,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5254949787628415732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8516461178585628176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f55baa5097842bd916d32ec68af9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rb2d: {fileID: 4067426426179272963}
 --- !u!50 &4067426426179272963
 Rigidbody2D:
   serializedVersion: 5
