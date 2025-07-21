@@ -1290,9 +1290,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8516461178585628176, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 628574538}
-    - targetCorrespondingSourceObject: {fileID: 8516461178585628176, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 628574537}
   m_SourcePrefab: {fileID: 100100000, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
 --- !u!1 &628574535 stripped
@@ -1327,20 +1324,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &628574538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628574535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f55baa5097842bd916d32ec68af9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rb2d: {fileID: 628574537}
 --- !u!4 &628574539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2170924348955376929, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
@@ -3910,7 +3893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1844142353
 Transform:
   m_ObjectHideFlags: 0
@@ -4075,9 +4058,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8516461178585628176, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1933639073}
-    - targetCorrespondingSourceObject: {fileID: 8516461178585628176, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1933639072}
   m_SourcePrefab: {fileID: 100100000, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}
 --- !u!1 &1933639070 stripped
@@ -4112,20 +4092,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1933639073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933639070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f55baa5097842bd916d32ec68af9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rb2d: {fileID: 1933639072}
 --- !u!4 &1933639074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2170924348955376929, guid: 3f73a3e88cf52c540a3caa601412f085, type: 3}

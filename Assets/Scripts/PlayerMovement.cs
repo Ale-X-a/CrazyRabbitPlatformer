@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>(); // why does it even work with current Animator setup?
         capsuleCollider2d = GetComponent<CapsuleCollider2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Time.timeScale = " + Time.timeScale);
+
         if (!isAlive) return;
 
         Run();
@@ -75,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         if (!isAlive) return;
+        Debug.Log("[InputSystem] OnMove called: " + value.Get<Vector2>());
         moveInput = value.Get<Vector2>();
     }
 
@@ -85,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (value.isPressed)
         {
+            Debug.Log("Jump");
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpSpeed);
             isJumping = true;
             animator.SetBool("isJumping", true);
@@ -93,6 +97,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
+        if (!IsAlive) return;
+
+        Debug.Log("[Run] moveInput = " + moveInput);
+
         Vector2 playerVelocity = new Vector2(moveInput.x * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = playerVelocity;
     }
